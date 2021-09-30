@@ -1,17 +1,17 @@
-equipamentos = []
-valores = []
-seriais = []
-departamento = []
-resposta = "S"
-while resposta == "S":
-    equipamentos.append(input("Equipamento:"))
-    valores.append(float(input("Valor:")))
-    seriais.append(int(input("Número serial:")))
-    departamento.append(input("Departamento:"))
-    resposta = input("Digite \"s\" para continuar:").upper()
+equipment = []
+values = []
+serials = []
+department = []
+answers = "y"
+while resposta == "y":
+    equipment.append(input("Equipment:"))
+    values.append(float(input("Value:")))
+    serials.append(int(input("Number serial:")))
+    department.append(input("Department:"))
+    answers = input("Type \"Y\" to continue:").upper()
 
-busca = input("\nDigite o nome do equipamento que deseja buscar:")
-for indice in range(0, len(equipamentos)):
-    if busca == equipamentos[indice]:
-        print("valor..:", valores[indice])
-        print("Serial.:", seriais[indice])
+search = input("\nEnter the name of the equpment you want to search:")
+for indice in range(0, len(equipment)):
+    if search == equipment[indice]:
+        print("Value..:", values[indice])
+        print("Serials.:", serials[indice])
